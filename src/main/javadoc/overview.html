@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Twuni I/O</title>
+	</head>
+	<body>
+
+		<p>Non-blocking I/O for everyone!</p>
+
+		<p>Build highly scalable event-oriented network services with a simplified, yet highly configurable, API.</p>
+
+		<p>The primary building blocks of the Twuni I/O library are the <code>EventHandler</code> object and the <code>Connection</code> object. A connection is writable and stateful, and an event handler is notified whenever a connection is <b>connected</b>, <b>disconnected</b>, when incoming <b>data</b> is ready to be processed, and when an <b>exception</b> occurs.</p>
+
+		<p>Typically, you would register a connection with your application in <code>EventHandler#onConnected</code>, unregister it from your application in <code>EventHandler#onDisconnected</code>, and forward data to your application for processing in <code>EventHandler#onData</code>.</p>
+
+		<p>If you roll your own <code>ConnectionFactory</code> and <code>Connection</code>, then you can attach all sorts of things to your connection which allow its state to be shared throughout the connection's lifespan.</p>
+
+		<p>There are some additional helper classes to lay the foundation for some common use cases, such as <b>authentication</b> (<code>Authenticator</code> and friends) and <b>packet relay</b> (<code>Transporter</code> and <code>Queue</code>).</p>
+
+	</body>
+
+</html>
